@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+quiz_results.txt
+.DS_Store
+*.swp
+*.swo

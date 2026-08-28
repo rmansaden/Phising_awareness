@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Awareness Training - CodeAlfa 2026</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-logo">
+                <span class="logo-icon">Shield</span>
+                <span class="logo-text">Phishing Awareness</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#types">Types</a></li>
+                <li><a href="#recognize">Recognize</a></li>
+                <li><a href="#examples">Examples</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#best-practices">Best Practices</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="intro" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Protect yourself from <span class="highlight">Phishing</span></h1>
+                <p class="hero-description">
+                    Learn how to recognize and avoid phishing attacks.
+                    Essential training for your digital security.
+                </p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number">94%</div>
+                        <div class="stat-label">of cyberattacks start with an email</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3.4</div>
+                        <div class="stat-label">billion phishing emails per day</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">30%</div>
+                        <div class="stat-label">phishing email open rate</div>
+                    </div>
+                </div>
+                <button class="btn-primary" onclick="startTraining()">Start training</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="types" class="section">
+        <div class="container">
+            <h2 class="section-title">Types of <span class="highlight">Attacks</span></h2>
+            <div class="cards-grid">
+                <div class="type-card">
+                    <div class="card-icon">Email</div>
+                    <h3>Email Phishing</h3>
+                    <p>Fraudulent emails impersonating legitimate organizations to steal your information.</p>
+                    <div class="card-tag">Most common</div>
+                </div>
+                <div class="type-card">
+                    <div class="card-icon">SMS</div>
+                    <h3>Smishing</h3>
+                    <p>Fraudulent text messages containing malicious links.</p>
+                    <div class="card-tag">Growing threat</div>
+                </div>
+                <div class="type-card">
+                    <div class="card-icon">Telephone</div>
+                    <h3>Vishing</h3>
+                    <p>Fraudulent phone calls impersonating trusted institutions.</p>
+                    <div class="card-tag">Dangerous</div>
+                </div>
+                <div class="type-card">
+                    <div class="card-icon">Cible</div>
+                    <h3>Spear Phishing</h3>
+                    <p>Personalized attacks aimed at specific people.</p>
+                    <div class="card-tag">Highly targeted</div>
+                </div>
+                <div class="type-card">
+                    <div class="card-icon">Dirigeant</div>
+                    <h3>Whaling</h3>
+                    <p>Phishing aimed at executives and senior leaders.</p>
+                    <div class="card-tag">High value</div>
+                </div>
+                <div class="type-card">
+                    <div class="card-icon">Copie</div>
+                    <h3>Clone Phishing</h3>
+                    <p>A copy of a legitimate email with modified malicious links.</p>
+                    <div class="card-tag">Hard to detect</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="recognize" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-title">How to <span class="highlight">Recognize</span> Phishing</h2>
+            <div class="recognize-grid">
+                <div class="recognize-item">
+                    <div class="icon-large">Email</div>
+                    <h3>Check the sender</h3>
+                    <p>Does the email address look official? Check the complete domain.</p>
+                    <div class="example-bad">support@paypa1.com</div>
+                    <div class="example-good">support@paypal.com</div>
+                </div>
+                <div class="recognize-item">
+                    <div class="icon-large">Lien</div>
+                    <h3>Hover over links</h3>
+                    <p>Before clicking, check where the link really leads.</p>
+                    <div class="example-bad">http://bit.ly/3xYz123</div>
+                    <div class="example-good">https://www.paypal.com/login</div>
+                </div>
+                <div class="recognize-item">
+                    <div class="icon-large">Orthographe</div>
+                    <h3>Spelling and grammar</h3>
+                    <p>Phishing emails often contain obvious spelling and grammar mistakes.</p>
+                    <div class="example-bad">Your account has been deactivated</div>
+                </div>
+                <div class="recognize-item">
+                    <div class="icon-large">Urgence</div>
+                    <h3>Urgency and threats</h3>
+                    <p>Be wary of messages designed to create a sense of urgency.</p>
+                    <div class="example-bad">Action immediate requise !</div>
+                </div>
+                <div class="recognize-item">
+                    <div class="icon-large">Piece jointe</div>
+                    <h3>Suspicious attachments</h3>
+                    <p>Do not open unsolicited attachments.</p>
+                    <div class="example-bad">facture_2026.exe</div>
+                    <div class="example-good">facture_2026.pdf</div>
+                </div>
+                <div class="recognize-item">
+                    <div class="icon-large">HTTPS</div>
+                    <h3>Check HTTPS</h3>
+                    <p>Secure connections use HTTPS, but HTTPS alone does not prove legitimacy.</p>
+                    <div class="example-bad">http://paypal-secure.com</div>
+                    <div class="example-good">https://www.paypal.com</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="examples" class="section">
+        <div class="container">
+            <h2 class="section-title">Real-world <span class="highlight">Examples</span></h2>
+            <div class="examples-grid">
+                <div class="example-card fake">
+                    <div class="example-header">
+                        <span class="example-tag">Phishing</span>
+                        <span class="example-company">Online Bank</span>
+                    </div>
+                    <div class="example-body">
+                        <p><strong>Subject:</strong> ALERT - Account locked!</p>
+                        <div class="email-content">
+                            <p>Dear customer,</p>
+                            <p>We detected suspicious activity on your account.</p>
+                            <p><strong>Click here immediately</strong> to confirm your identity</p>
+                            <p>or your account will be permanently suspended.</p>
+                            <div class="fraud-link">http://banque-securite-urgent.com</div>
+                        </div>
+                        <div class="red-flags">
+                            <h4>Red flags:</h4>
+                            <ul>
+                                <li>Excessive urgency</li>
+                                <li>Suspicious link outside the official domain</li>
+                                <li>Request for sensitive information</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-card real">
+                    <div class="example-header">
+                        <span class="example-tag">Legitimate</span>
+                        <span class="example-company">Online Bank</span>
+                    </div>
+                    <div class="example-body">
+                        <p><strong>Subject:</strong> Account statement - March 2026</p>
+                        <div class="email-content">
+                            <p>Hello [First name],</p>
+                            <p>Your monthly account statement is available.</p>
+                            <p>Sign in to your customer area to view it.</p>
+                            <div class="real-link">https://www.ma-banque.fr/compte</div>
+                        </div>
+                        <div class="green-flags">
+                            <h4>Trust signals:</h4>
+                            <ul>
+                                <li>No excessive urgency</li>
+                                <li>Valid HTTPS link</li>
+                                <li>No request for sensitive information</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-card fake">
+                    <div class="example-header">
+                        <span class="example-tag">Phishing</span>
+                        <span class="example-company">Google</span>
+                    </div>
+                    <div class="example-body">
+                        <p><strong>Subject:</strong> Your password is about to expire</p>
+                        <div class="email-content">
+                            <p>Bonjour,</p>
+                            <p>Your Gmail password expires in 24 hours.</p>
+                            <p><strong>Update it now</strong> to avoid losing access.</p>
+                            <div class="fraud-link">http://google-account-update.net</div>
+                        </div>
+                        <div class="red-flags">
+                            <h4>Red flags:</h4>
+                            <ul>
+                                <li>Google does not send this type of email</li>
+                                <li>Domain differs from google.com</li>
+                                <li>Artificial sense of urgency</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quiz" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-title">Interactive <span class="highlight">Quiz</span></h2>
+            <div id="quiz-container">
+                <div class="quiz-progress">
+                    <div class="progress-bar" id="progressBar"></div>
+                    <span id="question-counter">1/10</span>
+                </div>
+                <div id="question-container">
+                    <h3 id="question-text">Loading quiz...</h3>
+                    <div id="options-container"></div>
+                </div>
+                <div id="result-container" style="display: none;">
+                    <div class="result-card">
+                        <div class="result-icon" id="resultIcon">Trophy</div>
+                        <h3 id="result-title">Quiz complete!</h3>
+                        <div class="score-display">
+                            <span id="score">0</span>
+                            <span>/ 10</span>
+                        </div>
+                        <p id="result-message"></p>
+                        <button class="btn-primary" onclick="resetQuiz()">Try again</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="best-practices" class="section">
+        <div class="container">
+            <h2 class="section-title">Best <span class="highlight">Practices</span></h2>
+            <div class="practices-grid">
+                <div class="practice-item">
+                    <div class="practice-number">01</div>
+                    <h3>Always verify</h3>
+                    <p>Before clicking, verify the sender, link, and context.</p>
+                </div>
+                <div class="practice-item">
+                    <div class="practice-number">02</div>
+                    <h3>Two-factor authentication</h3>
+                    <p>Enable 2FA on all important accounts.</p>
+                </div>
+                <div class="practice-item">
+                    <div class="practice-number">03</div>
+                    <h3>Regular updates</h3>
+                    <p>Keep your systems and software up to date.</p>
+                </div>
+                <div class="practice-item">
+                    <div class="practice-number">04</div>
+                    <h3>Continuous learning</h3>
+                    <p>Stay informed about new phishing techniques.</p>
+                </div>
+                <div class="practice-item">
+                    <div class="practice-number">05</div>
+                    <h3>Report attacks</h3>
+                    <p>Report suspicious emails to your IT team.</p>
+                </div>
+                <div class="practice-item">
+                    <div class="practice-number">06</div>
+                    <h3>Unique passwords</h3>
+                    <p>Use a different password for every account.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Phishing Awareness</h3>
+                    <p>Training created for the CodeAlfa 2026 internship</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#intro">Home</a>
+                    <a href="#types">Types</a>
+                    <a href="#recognize">Recognize</a>
+                    <a href="#quiz">Quiz</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2026 - All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
